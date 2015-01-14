@@ -8,7 +8,7 @@ categories: docker linux ubuntu firewall ufw
 To enable host communication from `docker` container (for example to connect to MySQL database) you need to allow all connections for corresponding subnet:
 
 {% highlight bash %}
-# ifconfig
+$ ifconfig
 docker0   Link encap:Ethernet  HWaddr 56:84:7a:fe:97:99
           inet addr:172.17.42.1  Bcast:0.0.0.0  Mask:255.255.0.0
           inet6 addr: fe80::5484:7aff:fefe:9799/64 Scope:Link
@@ -21,10 +21,10 @@ docker0   Link encap:Ethernet  HWaddr 56:84:7a:fe:97:99
 {% endhighlight %}
 
 {% highlight bash %}
-# ufw allow from 172.17.0.0/16
+$ ufw allow from 172.17.0.0/16
 Rule added
 
-# ufw status
+$ ufw status
 Status: active
 
 To                         Action      From
