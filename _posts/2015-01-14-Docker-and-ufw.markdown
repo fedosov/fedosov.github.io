@@ -20,6 +20,8 @@ docker0   Link encap:Ethernet  HWaddr 56:84:7a:fe:97:99
 ...
 {% endhighlight %}
 
+Add:
+
 {% highlight bash %}
 $ ufw allow from 172.17.0.0/16
 Rule added
